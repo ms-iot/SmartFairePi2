@@ -7,23 +7,25 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="30acee40-9489-4688-ba37-d260cef8ab4c" Publisher="CN=apdutta" Version="1.0.0.0" ProcessorArchitecture="arm" />
-  <mp:PhoneIdentity PhoneProductId="30acee40-9489-4688-ba37-d260cef8ab4c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="b75e176e-c840-4d6c-a5d1-018735dd1a12" Publisher="CN=apdutta" Version="1.0.0.0" ProcessorArchitecture="arm" />
+  <mp:PhoneIdentity PhoneProductId="b75e176e-c840-4d6c-a5d1-018735dd1a12" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SmartFairePi2</DisplayName>
     <PublisherDisplayName>apdutta</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
-    <PackageDependency Name="Microsoft.NET.CoreRuntime.1.0" MinVersion="1.0.22816.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10192.0" MaxVersionTested="10.0.10192.0" />
+    <PackageDependency Name="Microsoft.NET.CoreRuntime.1.0" MinVersion="1.0.23109.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="CoreRuntime\SmartFairePi2.exe" EntryPoint="SmartFairePi2.App">
-      <uap:VisualElements DisplayName="SmartFairePi2" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="SmartFairePi2" BackgroundColor="#464646">
+    <Application Id="App" Executable="SmartFairePi2.exe" EntryPoint="SmartFairePi2.App">
+      <uap:VisualElements DisplayName="SmartFairePi2" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="SmartFairePi2" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
@@ -32,17 +34,16 @@
     <Capability Name="internetClient" />
   </Capabilities>
   <build:Metadata>
-    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015 RC" />
-    <build:Item Name="OperatingSystem" Version="10.0.10074.0 (fbl_impressive.150424-1350)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.22823.1" />
-    <build:Item Name="ProjectGUID" Value="{CBE2EFE1-C928-4077-BD48-61E67933D75E}" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23107.0" />
+    <build:Item Name="ProjectGUID" Value="{E9F90832-E775-4B86-9206-14E42EBAF61F}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
-    <build:Item Name="ilc.exe" Version="1.0.22816.00 built by: PROJECTNREL" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.22823.1" />
-    <build:Item Name="WindowsIoT" Version="10.0.10069.0" />
-    <build:Item Name="MakePri.exe" Version="10.0.10069.0 (fbl_impressive.150419-0022)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.23110.0" />
+    <build:Item Name="WindowsIoT" Version="10.0.10192.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.10192.0 (fbl_impressive.150706-1700)" />
   </build:Metadata>
 </Package>
