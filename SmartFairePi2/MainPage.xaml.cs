@@ -1,19 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using Windows.Devices.Enumeration;
 using Windows.Devices.I2c;
 
@@ -82,7 +69,7 @@ namespace SmartFairePi2
         {
             // initialize I2C communications
             try
-            { 
+            {
                 string deviceSelector = I2cDevice.GetDeviceSelector(I2C_CONTROLLER_NAME);
                 var i2cDeviceControllers = await DeviceInformation.FindAllAsync(deviceSelector);
 
@@ -167,7 +154,7 @@ namespace SmartFairePi2
                 PlayTheGame();
                 PrintIdleText();
             }
-            else 
+            else
             {
                 i2cLcdScreen.WriteRead(new byte[] { Mcp23017.GPIOA }, readBuffer);
                 if (readBuffer[0] != 0)
@@ -185,7 +172,7 @@ namespace SmartFairePi2
 
         private byte GetNextLight(byte mask)
         {
-            if(mask == 0x88)
+            if (mask == 0x88)
                 mask = 0x11;
             else
                 mask <<= 1;
@@ -196,7 +183,7 @@ namespace SmartFairePi2
         {
             CheckButtonStatus();
         }
-        
+
         public static byte GetRandomButtonMask(byte oldMask)
         {
             Random random = new Random();
@@ -233,7 +220,7 @@ namespace SmartFairePi2
             // Check to see if we have hits.  If so, up the count and 
             // null the mask so we get a new one the next time around.
             i2cButtonPanel.WriteRead(new byte[] { Mcp23017.GPIOA }, readBuffer);
-            if ((readBuffer[0] & Player1Buttons)== p1Mask)
+            if ((readBuffer[0] & Player1Buttons) == p1Mask)
             {
                 p1Count++;
                 p1Mask = 0;
@@ -250,7 +237,7 @@ namespace SmartFairePi2
             i2cButtonPanel.Write(new byte[] { Mcp23017.GPIOB, 0x00 });
             const uint maxTime = 20000;
             PrintSpeedInstructions();
-            
+
             p1Count = 0;
             p2Count = 0;
             p1Mask = 0;
@@ -262,7 +249,7 @@ namespace SmartFairePi2
                 GameLoop();
             }
             FlashWinner();
-            PrintGameOver();          
+            PrintGameOver();
         }
 
         public int line = 0;
@@ -277,7 +264,7 @@ namespace SmartFairePi2
             {
                 FlashButtons(Player2Buttons);
             }
-            else 
+            else
             {
                 FlashButtons(0xFF);
             }
