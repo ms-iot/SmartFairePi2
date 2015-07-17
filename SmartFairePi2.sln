@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFairePi2", "SmartFairePi2\SmartFairePi2.csproj", "{CBE2EFE1-C928-4077-BD48-61E67933D75E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFairePi2", "SmartFairePi2\SmartFairePi2.csproj", "{E9F90832-E775-4B86-9206-14E42EBAF61F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,24 +15,24 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|ARM.ActiveCfg = Debug|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|ARM.Build.0 = Debug|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|ARM.Deploy.0 = Debug|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x64.ActiveCfg = Debug|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x64.Build.0 = Debug|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x64.Deploy.0 = Debug|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x86.ActiveCfg = Debug|x86
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x86.Build.0 = Debug|x86
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Debug|x86.Deploy.0 = Debug|x86
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|ARM.ActiveCfg = Release|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|ARM.Build.0 = Release|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|ARM.Deploy.0 = Release|ARM
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x64.ActiveCfg = Release|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x64.Build.0 = Release|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x64.Deploy.0 = Release|x64
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x86.ActiveCfg = Release|x86
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x86.Build.0 = Release|x86
-		{CBE2EFE1-C928-4077-BD48-61E67933D75E}.Release|x86.Deploy.0 = Release|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|ARM.Build.0 = Debug|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x64.ActiveCfg = Debug|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x64.Build.0 = Debug|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x64.Deploy.0 = Debug|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x86.ActiveCfg = Debug|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x86.Build.0 = Debug|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Debug|x86.Deploy.0 = Debug|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|ARM.ActiveCfg = Release|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|ARM.Build.0 = Release|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|ARM.Deploy.0 = Release|ARM
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x64.ActiveCfg = Release|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x64.Build.0 = Release|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x64.Deploy.0 = Release|x64
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x86.ActiveCfg = Release|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x86.Build.0 = Release|x86
+		{E9F90832-E775-4B86-9206-14E42EBAF61F}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
