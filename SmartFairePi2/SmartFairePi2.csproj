@@ -11,8 +11,8 @@
     <AssemblyName>SmartFairePi2</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10192.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10192.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -133,7 +133,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="WindowsIoT, Version=10.0.10192.0">
+    <SDKReference Include="WindowsIoT, Version=10.0.10240.0">
       <Name>Windows IoT Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
